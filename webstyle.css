@@ -1,0 +1,317 @@
+html, body, h1, h2, p, nav, footer {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Marker Felt";
+    background-color: #000000;
+    color: #ffffff;
+    background-image: url('images/backgroundimg.png');
+    background-size: cover; /* Cover the entire body with the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    min-height: 100%; /* Ensure the body takes up at least the height of the viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+#mainPage header{
+    padding-top: 70px;   
+    padding-bottom: 0px;
+}
+
+header {
+    text-align: center;
+}
+
+/* New style for the content list */
+.content-list {
+    color: #9ae0fe; /* Setting the color of the list content */
+    font-size: 18px;
+    transition: color 0.3s ease
+}
+
+#navBar {
+    background-color: rgb(39, 38, 38);
+    height: 35px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-left: 20px;
+    border-radius: 30px;
+    position: fixed;
+    top: 1%;
+    width: 97%;
+    z-index: 9;
+}
+
+.navLink {
+    font-family: "Chalkduster";
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition-duration: 1.2s;
+    padding: 5px 15px;
+    margin-right: 10px;
+}
+
+#HomePage:hover, #AboutUs:hover, #Events:hover, #Contact:hover, #Services:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    padding: 2px 12px;
+    border-radius: 20px;
+}
+
+.spacer {
+    height: 50px; /* Adjust height as needed */
+}
+
+.spacetext {
+    height: 70px; /* Adjust height as needed */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    flex-grow: 1; /* Allow the main content to grow to fill the remaining space */
+}
+
+.content-list li {
+    padding-bottom: 8px; /* Adjust the space between bullet points */
+}
+image{
+    max-width: 100%;
+    max-height: 100%;
+}
+section {
+    background-color: #39a4fb;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+section:hover {
+    background-color: rgba(98, 0, 255, 0.573);
+}
+section:hover .content-list {
+    color: #ffcc00; 
+}
+section:nth-child(odd) {
+    margin-right: 20px; /* Ensure the last section in each row doesn't have a right margin */
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 100%; /* On smaller screens, make sections full width */
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-left: 0; /* Remove left margin on smaller screens */
+    }
+}
+
+#header {
+    margin-top: 25px;
+    font-family: 'Chalkduster';
+    color:#000000
+}
+
+section h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+section p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container takes up at least the height of the viewport */
+}
+
+main {
+    flex-grow: 1; /* Allow the main content to grow to fill the remaining space */
+}
+
+footer {
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+}
+
+.official-website {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.official-website p {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.official-website a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.official-website a:hover {
+    text-decoration: underline;
+}
+
+/* Adjust the margins and widths of each section */
+.section1 {
+    margin-right: 20px;
+    margin-left: 40px;
+    width: calc(80% - 40px);
+}
+
+.section2 {
+    margin-right: 0px;
+    margin-left: 20px;
+    width: calc(35% - 40px);
+}
+
+.section3 {
+    margin-right: 40px;
+    margin-left: 0px;
+    width: calc(65% - 40px);
+}
+
+.section4 {
+    margin-right: 20px;
+    margin-left: 40px;
+    width: 55%;
+    position: relative;
+}
+
+.section5 {
+    margin-right: 40px;
+    margin-left: 20px;
+    width: calc(45% - 40px);
+}
+
+.section6 {
+    margin-right: 20px;
+    margin-left: 0px;
+    width: calc(55% - 40px);
+}
+
+
+.image1 {
+    position: absolute;
+    top: 50%;
+    right: 105%; /* Position the image on the left side */
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    width: 30%;
+    max-width: 50%;
+}
+
+.image2 {
+    position: absolute;
+    top: 45%;
+    left: 103%; /* Position the image on the right side */
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    width: 35%;
+    max-width: 50%;
+}
+
+.leftnfl-image {
+    position: absolute;
+    top: 50%;
+    right: 105%; /* Position the image on the left side */
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    width: 30%;
+    max-width: 50%;
+}
+
+.rightnfl-image {
+    position: absolute;
+    top: 40%;
+    left: 110%; /* Position the image on the right side */
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    width: 15%;
+    max-width: 50%;
+}
+
+.leftnba-image {
+    position: absolute;
+    top: 50%;
+    right: 105%; /* Position the image on the left side */
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    width: 30%;
+    max-width: 50%;
+}
+
+.rightnba-image {
+    position: absolute;
+    top: 45%;
+    left: 115%; /* Position the image on the right side */
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    width: 10%;
+    max-width: 15%;
+}
+
+.leftnhl-image {
+    position: absolute;
+    top: 50%;
+    right: 103%; /* Position the image on the left side */
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    width: 40%;
+    max-width: 50%;
+}
+
+.rightnhl-image {
+    position: absolute;
+    top: 45%;
+    left: 114%; /* Position the image on the right side */
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    width: 13%;
+    max-width: 15%;
+}
+
+.leftmlb-image {
+    position: absolute;
+    top: 50%;
+    right: 103%; /* Position the image on the left side */
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    width: 35%;
+}
+
+.rightmlb-image {
+    position: absolute;
+    top: 42%;
+    left: 105%; /* Position the image on the right side */
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    width: 30%;
+    max-width: 45%;
+}
+
+
+
+
